@@ -1,0 +1,97 @@
+[
+    {
+        "nama": "Lanas",
+        "gejala": [
+            "Akar_busuk",
+            "Batang_layu",
+            "Daun_layu_total"
+        ]
+    },
+    {
+        "nama": "Phytium_sp",
+        "gejala": [
+            "Akar_busuk",
+            "Batang_hitam_dan_mengkerut",
+            "Daun_layu"
+        ]
+    },
+    {
+        "nama": "Ulat_tanah",
+        "gejala": [
+            "Batang_berlubang",
+            "Daun_berlubang",
+            "Daun_layu",
+            "Perlukaan_akar"
+        ]
+    },
+    {
+        "nama": "Jangkrik",
+        "gejala": [
+            "Batang_terpotong",
+            "Daun_berlubang",
+            "Perlukaan_akar"
+        ]
+    },
+    {
+        "nama": "Kutu_kebul",
+        "gejala": [
+            "Bawah_daun_bercak_hitam",
+            "Daun_mengkerut",
+            "Daun_menyempit",
+            "Tanaman_kerdil"
+        ]
+    },
+    {
+        "nama": "Tobacco_mozaic_virus",
+        "gejala": [
+            "Daun_bercak_hijau_gelap_tidak_merata",
+            "Daun_berkerut_mozaik",
+            "Tanaman_kerdil"
+        ]
+    },
+    {
+        "nama": "Phytophthora_daun",
+        "gejala": [
+            "Daun_layu_pada_daerah_terinfeksi",
+            "Daun_membusuk"
+        ]
+    },
+    {
+        "nama": "Begomovirus",
+        "gejala": [
+            "Daun_mengkerut",
+            "Daun_mengkerut_berwarna_kuning_keemasan",
+            "Tanaman_kerdil"
+        ]
+    },
+    {
+        "nama": "Cucumber_virus",
+        "gejala": [
+            "Daun_mengkerut_dengan_warna_tidak_rata",
+            "Tanaman_kerdil",
+            "Terdapat_pola_jaring_laba-laba_berwarna_kuning_kehitaman"
+        ]
+    },
+    {
+        "nama": "Virus_kerupuk",
+        "gejala": [
+            "Daun_mengkerut_seperti_kerupuk",
+            "Tanaman_kerdil"
+        ]
+    },
+    {
+        "nama": "Thrips_parvispinus",
+        "gejala": [
+            "Daun_transparan",
+            "Terdapat_bercak_putih_kecoklatan_di_sekitar_tulang_daun",
+            "Warna_daun_memudar"
+        ]
+    },
+    {
+        "nama": "Ulat_grayak",
+        "gejala": [
+            "Terdapat_banyak_lubang_kecil",
+            "Terdapat_bekas_gigitan_pada_jaringan_daun"
+        ]
+    }
+]

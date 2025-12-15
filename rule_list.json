@@ -1,0 +1,212 @@
+[
+    {
+        "rule": "R001",
+        "gejala": "Akar_busuk",
+        "nama": "Phytium_sp",
+        "skor": "0.3"
+    },
+    {
+        "rule": "R002",
+        "gejala": "Daun_layu",
+        "nama": "Phytium_sp",
+        "skor": "0.2"
+    },
+    {
+        "rule": "R003",
+        "gejala": "Batang_hitam_dan_mengkerut",
+        "nama": "Phytium_sp",
+        "skor": "0.5"
+    },
+    {
+        "rule": "R004",
+        "gejala": "Daun_bercak_hijau_gelap_tidak_merata",
+        "nama": "Tobacco_mozaic_virus",
+        "skor": "0.5"
+    },
+    {
+        "rule": "R005",
+        "gejala": "Tanaman_kerdil",
+        "nama": "Tobacco_mozaic_virus",
+        "skor": "0.2"
+    },
+    {
+        "rule": "R006",
+        "gejala": "Daun_berkerut_mozaik",
+        "nama": "Tobacco_mozaic_virus",
+        "skor": "0.3"
+    },
+    {
+        "rule": "R007",
+        "gejala": "Daun_layu_pada_daerah_terinfeksi",
+        "nama": "Phytophthora_daun",
+        "skor": "0.4"
+    },
+    {
+        "rule": "R008",
+        "gejala": "Daun_membusuk",
+        "nama": "Phytophthora_daun",
+        "skor": "0.6"
+    },
+    {
+        "rule": "R009",
+        "gejala": "Akar_busuk",
+        "nama": "Lanas",
+        "skor": "0.2"
+    },
+    {
+        "rule": "R010",
+        "gejala": "Batang_layu",
+        "nama": "Lanas",
+        "skor": "0.4"
+    },
+    {
+        "rule": "R011",
+        "gejala": "Daun_layu_total",
+        "nama": "Lanas",
+        "skor": "0.4"
+    },
+    {
+        "rule": "R012",
+        "gejala": "Daun_mengkerut",
+        "nama": "Begomovirus",
+        "skor": "0.3"
+    },
+    {
+        "rule": "R013",
+        "gejala": "Daun_mengkerut_berwarna_kuning_keemasan",
+        "nama": "Begomovirus",
+        "skor": "0.4"
+    },
+    {
+        "rule": "R014",
+        "gejala": "Tanaman_kerdil",
+        "nama": "Begomovirus",
+        "skor": "0.3"
+    },
+    {
+        "rule": "R015",
+        "gejala": "Daun_mengkerut_seperti_kerupuk",
+        "nama": "Virus_kerupuk",
+        "skor": "0.6"
+    },
+    {
+        "rule": "R016",
+        "gejala": "Tanaman_kerdil",
+        "nama": "Virus_kerupuk",
+        "skor": "0.4"
+    },
+    {
+        "rule": "R017",
+        "gejala": "Daun_mengkerut_dengan_warna_tidak_rata",
+        "nama": "Cucumber_virus",
+        "skor": "0.3"
+    },
+    {
+        "rule": "R018",
+        "gejala": "Terdapat_pola_jaring_laba-laba_berwarna_kuning_kehitaman",
+        "nama": "Cucumber_virus",
+        "skor": "0.4"
+    },
+    {
+        "rule": "R019",
+        "gejala": "Tanaman_kerdil",
+        "nama": "Cucumber_virus",
+        "skor": "0.3"
+    },
+    {
+        "rule": "R020",
+        "gejala": "Terdapat_bekas_gigitan_pada_jaringan_daun",
+        "nama": "Ulat_grayak",
+        "skor": "0.4"
+    },
+    {
+        "rule": "R021",
+        "gejala": "Terdapat_banyak_lubang_kecil",
+        "nama": "Ulat_grayak",
+        "skor": "0.6"
+    },
+    {
+        "rule": "R022",
+        "gejala": "Bawah_daun_bercak_hitam",
+        "nama": "Kutu_kebul",
+        "skor": "0.5"
+    },
+    {
+        "rule": "R023",
+        "gejala": "Tanaman_kerdil",
+        "nama": "Kutu_kebul",
+        "skor": "0.2"
+    },
+    {
+        "rule": "R024",
+        "gejala": "Daun_mengkerut",
+        "nama": "Kutu_kebul",
+        "skor": "0.1"
+    },
+    {
+        "rule": "R025",
+        "gejala": "Daun_menyempit",
+        "nama": "Kutu_kebul",
+        "skor": "0.2"
+    },
+    {
+        "rule": "R026",
+        "gejala": "Daun_layu",
+        "nama": "Ulat_tanah",
+        "skor": "0.2"
+    },
+    {
+        "rule": "R027",
+        "gejala": "Batang_berlubang",
+        "nama": "Ulat_tanah",
+        "skor": "0.3"
+    },
+    {
+        "rule": "R028",
+        "gejala": "Daun_berlubang",
+        "nama": "Ulat_tanah",
+        "skor": "0.3"
+    },
+    {
+        "rule": "R029",
+        "gejala": "Perlukaan_akar",
+        "nama": "Ulat_tanah",
+        "skor": "0.2"
+    },
+    {
+        "rule": "R030",
+        "gejala": "Warna_daun_memudar",
+        "nama": "Thrips_parvispinus",
+        "skor": "0.3"
+    },
+    {
+        "rule": "R031",
+        "gejala": "Daun_transparan",
+        "nama": "Thrips_parvispinus",
+        "skor": "0.3"
+    },
+    {
+        "rule": "R032",
+        "gejala": "Terdapat_bercak_putih_kecoklatan_di_sekitar_tulang_daun",
+        "nama": "Thrips_parvispinus",
+        "skor": "0.4"
+    },
+    {
+        "rule": "R033",
+        "gejala": "Batang_terpotong",
+        "nama": "Jangkrik",
+        "skor": "0.5"
+    },
+    {
+        "rule": "R034",
+        "gejala": "Daun_berlubang",
+        "nama": "Jangkrik",
+        "skor": "0.1"
+    },
+    {
+        "rule": "R035",
+        "gejala": "Perlukaan_akar",
+        "nama": "Jangkrik",
+        "skor": "0.4"
+    }
+]
