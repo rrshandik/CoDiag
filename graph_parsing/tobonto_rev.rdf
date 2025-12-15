@@ -1,0 +1,2127 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/asus/ontologies/2025/11/tobonto#"
+     xml:base="http://www.semanticweb.org/asus/ontologies/2025/11/tobonto"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:swrl="http://www.w3.org/2003/11/swrl#"
+     xmlns:swrla="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#"
+     xmlns:swrlb="http://www.w3.org/2003/11/swrlb#"
+     xmlns:tobonto="http://www.semanticweb.org/asus/ontologies/2025/11/tobonto#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/asus/ontologies/2025/11/tobonto"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled -->
+
+    <owl:AnnotationProperty rdf:about="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2025/11/tobonto#memilikiGejala -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/asus/ontologies/2025/11/tobonto#memilikiGejala">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/asus/ontologies/2025/11/tobonto#tanaman"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/asus/ontologies/2025/11/tobonto#gejala"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2025/11/tobonto#terdiagnosis -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/asus/ontologies/2025/11/tobonto#terdiagnosis">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/asus/ontologies/2025/11/tobonto#gejala"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/asus/ontologies/2025/11/tobonto#hama"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/asus/ontologies/2025/11/tobonto#penyakit"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2025/11/tobonto#setRisk -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/asus/ontologies/2025/11/tobonto#setRisk">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/asus/ontologies/2025/11/tobonto#hama"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/asus/ontologies/2025/11/tobonto#penyakit"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2025/11/tobonto#gejala -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2025/11/tobonto#gejala"/>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2025/11/tobonto#hama -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2025/11/tobonto#hama"/>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2025/11/tobonto#penyakit -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2025/11/tobonto#penyakit"/>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2025/11/tobonto#tanaman -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2025/11/tobonto#tanaman"/>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2025/11/tobonto#tembakau -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2025/11/tobonto#tembakau">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asus/ontologies/2025/11/tobonto#tanaman"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2025/11/tobonto#Akar_busuk -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/asus/ontologies/2025/11/tobonto#Akar_busuk">
+        <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2025/11/tobonto#gejala"/>
+        <terdiagnosis rdf:resource="http://www.semanticweb.org/asus/ontologies/2025/11/tobonto#Lanas"/>
+        <terdiagnosis rdf:resource="http://www.semanticweb.org/asus/ontologies/2025/11/tobonto#Phytium_sp"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2025/11/tobonto#Batang_berlubang -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/asus/ontologies/2025/11/tobonto#Batang_berlubang">
+        <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2025/11/tobonto#gejala"/>
+        <terdiagnosis rdf:resource="http://www.semanticweb.org/asus/ontologies/2025/11/tobonto#Ulat_tanah"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2025/11/tobonto#Batang_hitam_dan_mengkerut -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/asus/ontologies/2025/11/tobonto#Batang_hitam_dan_mengkerut">
+        <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2025/11/tobonto#gejala"/>
+        <terdiagnosis rdf:resource="http://www.semanticweb.org/asus/ontologies/2025/11/tobonto#Phytium_sp"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2025/11/tobonto#Batang_layu -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/asus/ontologies/2025/11/tobonto#Batang_layu">
+        <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2025/11/tobonto#gejala"/>
+        <terdiagnosis rdf:resource="http://www.semanticweb.org/asus/ontologies/2025/11/tobonto#Lanas"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2025/11/tobonto#Batang_terpotong -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/asus/ontologies/2025/11/tobonto#Batang_terpotong">
+        <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2025/11/tobonto#gejala"/>
+        <terdiagnosis rdf:resource="http://www.semanticweb.org/asus/ontologies/2025/11/tobonto#Jangkrik"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2025/11/tobonto#Bawah_daun_bercak_hitam -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/asus/ontologies/2025/11/tobonto#Bawah_daun_bercak_hitam">
+        <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2025/11/tobonto#gejala"/>
+        <terdiagnosis rdf:resource="http://www.semanticweb.org/asus/ontologies/2025/11/tobonto#Kutu_kebul"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2025/11/tobonto#Begomovirus -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/asus/ontologies/2025/11/tobonto#Begomovirus">
+        <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2025/11/tobonto#hama"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2025/11/tobonto#penyakit"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2025/11/tobonto#Cucumber_virus -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/asus/ontologies/2025/11/tobonto#Cucumber_virus">
+        <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2025/11/tobonto#hama"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2025/11/tobonto#penyakit"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2025/11/tobonto#Daun_bercak_hijau_gelap_tidak_merata -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/asus/ontologies/2025/11/tobonto#Daun_bercak_hijau_gelap_tidak_merata">
+        <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2025/11/tobonto#gejala"/>
+        <terdiagnosis rdf:resource="http://www.semanticweb.org/asus/ontologies/2025/11/tobonto#Tobacco_mozaic_virus"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2025/11/tobonto#Daun_berkerut_mozaik -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/asus/ontologies/2025/11/tobonto#Daun_berkerut_mozaik">
+        <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2025/11/tobonto#gejala"/>
+        <terdiagnosis rdf:resource="http://www.semanticweb.org/asus/ontologies/2025/11/tobonto#Tobacco_mozaic_virus"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2025/11/tobonto#Daun_berlubang -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/asus/ontologies/2025/11/tobonto#Daun_berlubang">
+        <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2025/11/tobonto#gejala"/>
+        <terdiagnosis rdf:resource="http://www.semanticweb.org/asus/ontologies/2025/11/tobonto#Jangkrik"/>
+        <terdiagnosis rdf:resource="http://www.semanticweb.org/asus/ontologies/2025/11/tobonto#Ulat_tanah"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2025/11/tobonto#Daun_layu -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/asus/ontologies/2025/11/tobonto#Daun_layu">
+        <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2025/11/tobonto#gejala"/>
+        <terdiagnosis rdf:resource="http://www.semanticweb.org/asus/ontologies/2025/11/tobonto#Phytium_sp"/>
+        <terdiagnosis rdf:resource="http://www.semanticweb.org/asus/ontologies/2025/11/tobonto#Ulat_tanah"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2025/11/tobonto#Daun_layu_pada_daerah_terinfeksi -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/asus/ontologies/2025/11/tobonto#Daun_layu_pada_daerah_terinfeksi">
+        <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2025/11/tobonto#gejala"/>
+        <terdiagnosis rdf:resource="http://www.semanticweb.org/asus/ontologies/2025/11/tobonto#Phytophthora_daun"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2025/11/tobonto#Daun_layu_total -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/asus/ontologies/2025/11/tobonto#Daun_layu_total">
+        <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2025/11/tobonto#gejala"/>
+        <terdiagnosis rdf:resource="http://www.semanticweb.org/asus/ontologies/2025/11/tobonto#Lanas"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2025/11/tobonto#Daun_membusuk -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/asus/ontologies/2025/11/tobonto#Daun_membusuk">
+        <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2025/11/tobonto#gejala"/>
+        <terdiagnosis rdf:resource="http://www.semanticweb.org/asus/ontologies/2025/11/tobonto#Phytophthora_daun"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2025/11/tobonto#Daun_mengkerut -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/asus/ontologies/2025/11/tobonto#Daun_mengkerut">
+        <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2025/11/tobonto#gejala"/>
+        <terdiagnosis rdf:resource="http://www.semanticweb.org/asus/ontologies/2025/11/tobonto#Begomovirus"/>
+        <terdiagnosis rdf:resource="http://www.semanticweb.org/asus/ontologies/2025/11/tobonto#Kutu_kebul"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2025/11/tobonto#Daun_mengkerut_berwarna_kuning_keemasan -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/asus/ontologies/2025/11/tobonto#Daun_mengkerut_berwarna_kuning_keemasan">
+        <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2025/11/tobonto#gejala"/>
+        <terdiagnosis rdf:resource="http://www.semanticweb.org/asus/ontologies/2025/11/tobonto#Begomovirus"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2025/11/tobonto#Daun_mengkerut_dengan_warna_tidak_rata -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/asus/ontologies/2025/11/tobonto#Daun_mengkerut_dengan_warna_tidak_rata">
+        <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2025/11/tobonto#gejala"/>
+        <terdiagnosis rdf:resource="http://www.semanticweb.org/asus/ontologies/2025/11/tobonto#Cucumber_virus"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2025/11/tobonto#Daun_mengkerut_seperti_kerupuk -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/asus/ontologies/2025/11/tobonto#Daun_mengkerut_seperti_kerupuk">
+        <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2025/11/tobonto#gejala"/>
+        <terdiagnosis rdf:resource="http://www.semanticweb.org/asus/ontologies/2025/11/tobonto#Virus_kerupuk"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2025/11/tobonto#Daun_menyempit -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/asus/ontologies/2025/11/tobonto#Daun_menyempit">
+        <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2025/11/tobonto#gejala"/>
+        <terdiagnosis rdf:resource="http://www.semanticweb.org/asus/ontologies/2025/11/tobonto#Kutu_kebul"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2025/11/tobonto#Daun_transparan -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/asus/ontologies/2025/11/tobonto#Daun_transparan">
+        <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2025/11/tobonto#gejala"/>
+        <terdiagnosis rdf:resource="http://www.semanticweb.org/asus/ontologies/2025/11/tobonto#Thrips_parvispinus"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2025/11/tobonto#Jangkrik -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/asus/ontologies/2025/11/tobonto#Jangkrik">
+        <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2025/11/tobonto#hama"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2025/11/tobonto#penyakit"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2025/11/tobonto#Kutu_kebul -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/asus/ontologies/2025/11/tobonto#Kutu_kebul">
+        <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2025/11/tobonto#hama"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2025/11/tobonto#penyakit"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2025/11/tobonto#Lanas -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/asus/ontologies/2025/11/tobonto#Lanas">
+        <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2025/11/tobonto#hama"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2025/11/tobonto#penyakit"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2025/11/tobonto#Perlukaan_akar -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/asus/ontologies/2025/11/tobonto#Perlukaan_akar">
+        <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2025/11/tobonto#gejala"/>
+        <terdiagnosis rdf:resource="http://www.semanticweb.org/asus/ontologies/2025/11/tobonto#Jangkrik"/>
+        <terdiagnosis rdf:resource="http://www.semanticweb.org/asus/ontologies/2025/11/tobonto#Ulat_tanah"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2025/11/tobonto#Phytium_sp -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/asus/ontologies/2025/11/tobonto#Phytium_sp">
+        <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2025/11/tobonto#hama"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2025/11/tobonto#penyakit"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2025/11/tobonto#Phytophthora_daun -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/asus/ontologies/2025/11/tobonto#Phytophthora_daun">
+        <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2025/11/tobonto#hama"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2025/11/tobonto#penyakit"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2025/11/tobonto#Tanaman_kerdil -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/asus/ontologies/2025/11/tobonto#Tanaman_kerdil">
+        <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2025/11/tobonto#gejala"/>
+        <terdiagnosis rdf:resource="http://www.semanticweb.org/asus/ontologies/2025/11/tobonto#Begomovirus"/>
+        <terdiagnosis rdf:resource="http://www.semanticweb.org/asus/ontologies/2025/11/tobonto#Cucumber_virus"/>
+        <terdiagnosis rdf:resource="http://www.semanticweb.org/asus/ontologies/2025/11/tobonto#Kutu_kebul"/>
+        <terdiagnosis rdf:resource="http://www.semanticweb.org/asus/ontologies/2025/11/tobonto#Tobacco_mozaic_virus"/>
+        <terdiagnosis rdf:resource="http://www.semanticweb.org/asus/ontologies/2025/11/tobonto#Virus_kerupuk"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2025/11/tobonto#Tembakau -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/asus/ontologies/2025/11/tobonto#Tembakau">
+        <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2025/11/tobonto#tanaman"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2025/11/tobonto#tembakau"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2025/11/tobonto#Terdapat_banyak_lubang_kecil -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/asus/ontologies/2025/11/tobonto#Terdapat_banyak_lubang_kecil">
+        <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2025/11/tobonto#gejala"/>
+        <terdiagnosis rdf:resource="http://www.semanticweb.org/asus/ontologies/2025/11/tobonto#Ulat_grayak"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2025/11/tobonto#Terdapat_bekas_gigitan_pada_jaringan_daun -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/asus/ontologies/2025/11/tobonto#Terdapat_bekas_gigitan_pada_jaringan_daun">
+        <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2025/11/tobonto#gejala"/>
+        <terdiagnosis rdf:resource="http://www.semanticweb.org/asus/ontologies/2025/11/tobonto#Ulat_grayak"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2025/11/tobonto#Terdapat_bercak_putih_kecoklatan_di_sekitar_tulang_daun -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/asus/ontologies/2025/11/tobonto#Terdapat_bercak_putih_kecoklatan_di_sekitar_tulang_daun">
+        <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2025/11/tobonto#gejala"/>
+        <terdiagnosis rdf:resource="http://www.semanticweb.org/asus/ontologies/2025/11/tobonto#Thrips_parvispinus"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2025/11/tobonto#Terdapat_pola_jaring_laba-laba_berwarna_kuning_kehitaman -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/asus/ontologies/2025/11/tobonto#Terdapat_pola_jaring_laba-laba_berwarna_kuning_kehitaman">
+        <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2025/11/tobonto#gejala"/>
+        <terdiagnosis rdf:resource="http://www.semanticweb.org/asus/ontologies/2025/11/tobonto#Cucumber_virus"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2025/11/tobonto#Thrips_parvispinus -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/asus/ontologies/2025/11/tobonto#Thrips_parvispinus">
+        <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2025/11/tobonto#hama"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2025/11/tobonto#penyakit"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2025/11/tobonto#Tobacco_mozaic_virus -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/asus/ontologies/2025/11/tobonto#Tobacco_mozaic_virus">
+        <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2025/11/tobonto#hama"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2025/11/tobonto#penyakit"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2025/11/tobonto#Ulat_grayak -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/asus/ontologies/2025/11/tobonto#Ulat_grayak">
+        <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2025/11/tobonto#hama"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2025/11/tobonto#penyakit"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2025/11/tobonto#Ulat_tanah -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/asus/ontologies/2025/11/tobonto#Ulat_tanah">
+        <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2025/11/tobonto#hama"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2025/11/tobonto#penyakit"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2025/11/tobonto#Virus_kerupuk -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/asus/ontologies/2025/11/tobonto#Virus_kerupuk">
+        <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2025/11/tobonto#hama"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2025/11/tobonto#penyakit"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2025/11/tobonto#Warna_daun_memudar -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/asus/ontologies/2025/11/tobonto#Warna_daun_memudar">
+        <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2025/11/tobonto#gejala"/>
+        <terdiagnosis rdf:resource="http://www.semanticweb.org/asus/ontologies/2025/11/tobonto#Thrips_parvispinus"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Rules
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description rdf:about="http://www.semanticweb.org/asus/ontologies/2025/11/tobonto#t">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment></rdfs:comment>
+        <rdfs:label>R009</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/asus/ontologies/2025/11/tobonto#tanaman"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/asus/ontologies/2025/11/tobonto#t"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/asus/ontologies/2025/11/tobonto#terdiagnosis"/>
+                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/asus/ontologies/2025/11/tobonto#t"/>
+                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/asus/ontologies/2025/11/tobonto#Akar_busuk"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/asus/ontologies/2025/11/tobonto#setRisk"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/asus/ontologies/2025/11/tobonto#Lanas"/>
+                        <swrl:argument2 rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.2</swrl:argument2>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment></rdfs:comment>
+        <rdfs:label>R008</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/asus/ontologies/2025/11/tobonto#tanaman"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/asus/ontologies/2025/11/tobonto#t"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/asus/ontologies/2025/11/tobonto#terdiagnosis"/>
+                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/asus/ontologies/2025/11/tobonto#t"/>
+                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/asus/ontologies/2025/11/tobonto#Daun_membusuk"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/asus/ontologies/2025/11/tobonto#setRisk"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/asus/ontologies/2025/11/tobonto#Phytophthora_daun"/>
+                        <swrl:argument2 rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.6</swrl:argument2>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment></rdfs:comment>
+        <rdfs:label>R012</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/asus/ontologies/2025/11/tobonto#tanaman"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/asus/ontologies/2025/11/tobonto#t"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/asus/ontologies/2025/11/tobonto#terdiagnosis"/>
+                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/asus/ontologies/2025/11/tobonto#t"/>
+                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/asus/ontologies/2025/11/tobonto#Daun_mengkerut"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/asus/ontologies/2025/11/tobonto#setRisk"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/asus/ontologies/2025/11/tobonto#Begomovirus"/>
+                        <swrl:argument2 rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.3</swrl:argument2>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment></rdfs:comment>
+        <rdfs:label>R024</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/asus/ontologies/2025/11/tobonto#tanaman"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/asus/ontologies/2025/11/tobonto#t"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/asus/ontologies/2025/11/tobonto#terdiagnosis"/>
+                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/asus/ontologies/2025/11/tobonto#t"/>
+                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/asus/ontologies/2025/11/tobonto#Daun_mengkerut"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/asus/ontologies/2025/11/tobonto#setRisk"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/asus/ontologies/2025/11/tobonto#Kutu_kebul"/>
+                        <swrl:argument2 rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.1</swrl:argument2>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment></rdfs:comment>
+        <rdfs:label>R013</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/asus/ontologies/2025/11/tobonto#tanaman"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/asus/ontologies/2025/11/tobonto#t"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/asus/ontologies/2025/11/tobonto#terdiagnosis"/>
+                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/asus/ontologies/2025/11/tobonto#t"/>
+                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/asus/ontologies/2025/11/tobonto#Daun_mengkerut_berwarna_kuning_keemasan"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/asus/ontologies/2025/11/tobonto#setRisk"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/asus/ontologies/2025/11/tobonto#Begomovirus"/>
+                        <swrl:argument2 rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.4</swrl:argument2>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment></rdfs:comment>
+        <rdfs:label>R017</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/asus/ontologies/2025/11/tobonto#tanaman"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/asus/ontologies/2025/11/tobonto#t"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/asus/ontologies/2025/11/tobonto#terdiagnosis"/>
+                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/asus/ontologies/2025/11/tobonto#t"/>
+                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/asus/ontologies/2025/11/tobonto#Daun_mengkerut_dengan_warna_tidak_rata"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/asus/ontologies/2025/11/tobonto#setRisk"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/asus/ontologies/2025/11/tobonto#Cucumber_virus"/>
+                        <swrl:argument2 rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.3</swrl:argument2>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment></rdfs:comment>
+        <rdfs:label>R015</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/asus/ontologies/2025/11/tobonto#tanaman"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/asus/ontologies/2025/11/tobonto#t"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/asus/ontologies/2025/11/tobonto#terdiagnosis"/>
+                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/asus/ontologies/2025/11/tobonto#t"/>
+                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/asus/ontologies/2025/11/tobonto#Daun_mengkerut_seperti_kerupuk"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/asus/ontologies/2025/11/tobonto#setRisk"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/asus/ontologies/2025/11/tobonto#Virus_kerupuk"/>
+                        <swrl:argument2 rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.6</swrl:argument2>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment></rdfs:comment>
+        <rdfs:label>R025</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/asus/ontologies/2025/11/tobonto#tanaman"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/asus/ontologies/2025/11/tobonto#t"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/asus/ontologies/2025/11/tobonto#terdiagnosis"/>
+                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/asus/ontologies/2025/11/tobonto#t"/>
+                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/asus/ontologies/2025/11/tobonto#Daun_menyempit"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/asus/ontologies/2025/11/tobonto#setRisk"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/asus/ontologies/2025/11/tobonto#Kutu_kebul"/>
+                        <swrl:argument2 rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.2</swrl:argument2>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment></rdfs:comment>
+        <rdfs:label>R027</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/asus/ontologies/2025/11/tobonto#tanaman"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/asus/ontologies/2025/11/tobonto#t"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/asus/ontologies/2025/11/tobonto#terdiagnosis"/>
+                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/asus/ontologies/2025/11/tobonto#t"/>
+                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/asus/ontologies/2025/11/tobonto#Batang_berlubang"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/asus/ontologies/2025/11/tobonto#setRisk"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/asus/ontologies/2025/11/tobonto#Ulat_tanah"/>
+                        <swrl:argument2 rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.3</swrl:argument2>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment></rdfs:comment>
+        <rdfs:label>R031</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/asus/ontologies/2025/11/tobonto#tanaman"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/asus/ontologies/2025/11/tobonto#t"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/asus/ontologies/2025/11/tobonto#terdiagnosis"/>
+                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/asus/ontologies/2025/11/tobonto#t"/>
+                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/asus/ontologies/2025/11/tobonto#Daun_transparan"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/asus/ontologies/2025/11/tobonto#setRisk"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/asus/ontologies/2025/11/tobonto#Thrips_parvispinus"/>
+                        <swrl:argument2 rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.3</swrl:argument2>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment></rdfs:comment>
+        <rdfs:label>R035</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/asus/ontologies/2025/11/tobonto#tanaman"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/asus/ontologies/2025/11/tobonto#t"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/asus/ontologies/2025/11/tobonto#terdiagnosis"/>
+                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/asus/ontologies/2025/11/tobonto#t"/>
+                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/asus/ontologies/2025/11/tobonto#Perlukaan_akar"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/asus/ontologies/2025/11/tobonto#setRisk"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/asus/ontologies/2025/11/tobonto#Jangkrik"/>
+                        <swrl:argument2 rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.4</swrl:argument2>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment></rdfs:comment>
+        <rdfs:label>R029</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/asus/ontologies/2025/11/tobonto#tanaman"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/asus/ontologies/2025/11/tobonto#t"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/asus/ontologies/2025/11/tobonto#terdiagnosis"/>
+                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/asus/ontologies/2025/11/tobonto#t"/>
+                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/asus/ontologies/2025/11/tobonto#Perlukaan_akar"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/asus/ontologies/2025/11/tobonto#setRisk"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/asus/ontologies/2025/11/tobonto#Ulat_tanah"/>
+                        <swrl:argument2 rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.2</swrl:argument2>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment></rdfs:comment>
+        <rdfs:label>R014</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/asus/ontologies/2025/11/tobonto#tanaman"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/asus/ontologies/2025/11/tobonto#t"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/asus/ontologies/2025/11/tobonto#terdiagnosis"/>
+                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/asus/ontologies/2025/11/tobonto#t"/>
+                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/asus/ontologies/2025/11/tobonto#Tanaman_kerdil"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/asus/ontologies/2025/11/tobonto#setRisk"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/asus/ontologies/2025/11/tobonto#Begomovirus"/>
+                        <swrl:argument2 rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.3</swrl:argument2>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment></rdfs:comment>
+        <rdfs:label>R019</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/asus/ontologies/2025/11/tobonto#tanaman"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/asus/ontologies/2025/11/tobonto#t"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/asus/ontologies/2025/11/tobonto#terdiagnosis"/>
+                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/asus/ontologies/2025/11/tobonto#t"/>
+                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/asus/ontologies/2025/11/tobonto#Tanaman_kerdil"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/asus/ontologies/2025/11/tobonto#setRisk"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/asus/ontologies/2025/11/tobonto#Cucumber_virus"/>
+                        <swrl:argument2 rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.3</swrl:argument2>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment></rdfs:comment>
+        <rdfs:label>R023</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/asus/ontologies/2025/11/tobonto#tanaman"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/asus/ontologies/2025/11/tobonto#t"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/asus/ontologies/2025/11/tobonto#terdiagnosis"/>
+                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/asus/ontologies/2025/11/tobonto#t"/>
+                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/asus/ontologies/2025/11/tobonto#Tanaman_kerdil"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/asus/ontologies/2025/11/tobonto#setRisk"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/asus/ontologies/2025/11/tobonto#Kutu_kebul"/>
+                        <swrl:argument2 rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.2</swrl:argument2>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment></rdfs:comment>
+        <rdfs:label>R005</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/asus/ontologies/2025/11/tobonto#tanaman"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/asus/ontologies/2025/11/tobonto#t"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/asus/ontologies/2025/11/tobonto#terdiagnosis"/>
+                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/asus/ontologies/2025/11/tobonto#t"/>
+                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/asus/ontologies/2025/11/tobonto#Tanaman_kerdil"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/asus/ontologies/2025/11/tobonto#setRisk"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/asus/ontologies/2025/11/tobonto#Tobacco_mozaic_virus"/>
+                        <swrl:argument2 rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.2</swrl:argument2>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment></rdfs:comment>
+        <rdfs:label>R016</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/asus/ontologies/2025/11/tobonto#tanaman"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/asus/ontologies/2025/11/tobonto#t"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/asus/ontologies/2025/11/tobonto#terdiagnosis"/>
+                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/asus/ontologies/2025/11/tobonto#t"/>
+                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/asus/ontologies/2025/11/tobonto#Tanaman_kerdil"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/asus/ontologies/2025/11/tobonto#setRisk"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/asus/ontologies/2025/11/tobonto#Virus_kerupuk"/>
+                        <swrl:argument2 rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.4</swrl:argument2>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment></rdfs:comment>
+        <rdfs:label>R021</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/asus/ontologies/2025/11/tobonto#tanaman"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/asus/ontologies/2025/11/tobonto#t"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/asus/ontologies/2025/11/tobonto#terdiagnosis"/>
+                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/asus/ontologies/2025/11/tobonto#t"/>
+                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/asus/ontologies/2025/11/tobonto#Terdapat_banyak_lubang_kecil"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/asus/ontologies/2025/11/tobonto#setRisk"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/asus/ontologies/2025/11/tobonto#Ulat_grayak"/>
+                        <swrl:argument2 rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.6</swrl:argument2>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment></rdfs:comment>
+        <rdfs:label>R020</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/asus/ontologies/2025/11/tobonto#tanaman"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/asus/ontologies/2025/11/tobonto#t"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/asus/ontologies/2025/11/tobonto#terdiagnosis"/>
+                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/asus/ontologies/2025/11/tobonto#t"/>
+                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/asus/ontologies/2025/11/tobonto#Terdapat_bekas_gigitan_pada_jaringan_daun"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/asus/ontologies/2025/11/tobonto#setRisk"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/asus/ontologies/2025/11/tobonto#Ulat_grayak"/>
+                        <swrl:argument2 rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.4</swrl:argument2>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment></rdfs:comment>
+        <rdfs:label>R003</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/asus/ontologies/2025/11/tobonto#tanaman"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/asus/ontologies/2025/11/tobonto#t"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/asus/ontologies/2025/11/tobonto#terdiagnosis"/>
+                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/asus/ontologies/2025/11/tobonto#t"/>
+                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/asus/ontologies/2025/11/tobonto#Batang_hitam_dan_mengkerut"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/asus/ontologies/2025/11/tobonto#setRisk"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/asus/ontologies/2025/11/tobonto#Phytium_sp"/>
+                        <swrl:argument2 rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.5</swrl:argument2>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment></rdfs:comment>
+        <rdfs:label>R032</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/asus/ontologies/2025/11/tobonto#tanaman"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/asus/ontologies/2025/11/tobonto#t"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/asus/ontologies/2025/11/tobonto#terdiagnosis"/>
+                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/asus/ontologies/2025/11/tobonto#t"/>
+                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/asus/ontologies/2025/11/tobonto#Terdapat_bercak_putih_kecoklatan_di_sekitar_tulang_daun"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/asus/ontologies/2025/11/tobonto#setRisk"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/asus/ontologies/2025/11/tobonto#Thrips_parvispinus"/>
+                        <swrl:argument2 rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.4</swrl:argument2>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment></rdfs:comment>
+        <rdfs:label>R018</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/asus/ontologies/2025/11/tobonto#tanaman"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/asus/ontologies/2025/11/tobonto#t"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/asus/ontologies/2025/11/tobonto#terdiagnosis"/>
+                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/asus/ontologies/2025/11/tobonto#t"/>
+                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/asus/ontologies/2025/11/tobonto#Terdapat_pola_jaring_laba-laba_berwarna_kuning_kehitaman"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/asus/ontologies/2025/11/tobonto#setRisk"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/asus/ontologies/2025/11/tobonto#Cucumber_virus"/>
+                        <swrl:argument2 rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.4</swrl:argument2>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment></rdfs:comment>
+        <rdfs:label>R030</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/asus/ontologies/2025/11/tobonto#tanaman"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/asus/ontologies/2025/11/tobonto#t"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/asus/ontologies/2025/11/tobonto#terdiagnosis"/>
+                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/asus/ontologies/2025/11/tobonto#t"/>
+                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/asus/ontologies/2025/11/tobonto#Warna_daun_memudar"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/asus/ontologies/2025/11/tobonto#setRisk"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/asus/ontologies/2025/11/tobonto#Thrips_parvispinus"/>
+                        <swrl:argument2 rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.3</swrl:argument2>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment></rdfs:comment>
+        <rdfs:label>R010</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/asus/ontologies/2025/11/tobonto#tanaman"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/asus/ontologies/2025/11/tobonto#t"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/asus/ontologies/2025/11/tobonto#terdiagnosis"/>
+                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/asus/ontologies/2025/11/tobonto#t"/>
+                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/asus/ontologies/2025/11/tobonto#Batang_layu"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/asus/ontologies/2025/11/tobonto#setRisk"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/asus/ontologies/2025/11/tobonto#Lanas"/>
+                        <swrl:argument2 rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.4</swrl:argument2>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment></rdfs:comment>
+        <rdfs:label>R033</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/asus/ontologies/2025/11/tobonto#tanaman"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/asus/ontologies/2025/11/tobonto#t"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/asus/ontologies/2025/11/tobonto#terdiagnosis"/>
+                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/asus/ontologies/2025/11/tobonto#t"/>
+                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/asus/ontologies/2025/11/tobonto#Batang_terpotong"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/asus/ontologies/2025/11/tobonto#setRisk"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/asus/ontologies/2025/11/tobonto#Jangkrik"/>
+                        <swrl:argument2 rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.5</swrl:argument2>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment></rdfs:comment>
+        <rdfs:label>R022</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/asus/ontologies/2025/11/tobonto#tanaman"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/asus/ontologies/2025/11/tobonto#t"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/asus/ontologies/2025/11/tobonto#terdiagnosis"/>
+                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/asus/ontologies/2025/11/tobonto#t"/>
+                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/asus/ontologies/2025/11/tobonto#Bawah_daun_bercak_hitam"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/asus/ontologies/2025/11/tobonto#setRisk"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/asus/ontologies/2025/11/tobonto#Kutu_kebul"/>
+                        <swrl:argument2 rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.5</swrl:argument2>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment></rdfs:comment>
+        <rdfs:label>R004</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/asus/ontologies/2025/11/tobonto#tanaman"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/asus/ontologies/2025/11/tobonto#t"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/asus/ontologies/2025/11/tobonto#terdiagnosis"/>
+                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/asus/ontologies/2025/11/tobonto#t"/>
+                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/asus/ontologies/2025/11/tobonto#Daun_bercak_hijau_gelap_tidak_merata"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/asus/ontologies/2025/11/tobonto#setRisk"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/asus/ontologies/2025/11/tobonto#Tobacco_mozaic_virus"/>
+                        <swrl:argument2 rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.5</swrl:argument2>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment></rdfs:comment>
+        <rdfs:label>R006</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/asus/ontologies/2025/11/tobonto#tanaman"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/asus/ontologies/2025/11/tobonto#t"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/asus/ontologies/2025/11/tobonto#terdiagnosis"/>
+                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/asus/ontologies/2025/11/tobonto#t"/>
+                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/asus/ontologies/2025/11/tobonto#Daun_berkerut_mozaik"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/asus/ontologies/2025/11/tobonto#setRisk"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/asus/ontologies/2025/11/tobonto#Tobacco_mozaic_virus"/>
+                        <swrl:argument2 rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.3</swrl:argument2>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment></rdfs:comment>
+        <rdfs:label>R034</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/asus/ontologies/2025/11/tobonto#tanaman"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/asus/ontologies/2025/11/tobonto#t"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/asus/ontologies/2025/11/tobonto#terdiagnosis"/>
+                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/asus/ontologies/2025/11/tobonto#t"/>
+                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/asus/ontologies/2025/11/tobonto#Daun_berlubang"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/asus/ontologies/2025/11/tobonto#setRisk"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/asus/ontologies/2025/11/tobonto#Jangkrik"/>
+                        <swrl:argument2 rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.1</swrl:argument2>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment></rdfs:comment>
+        <rdfs:label>R028</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/asus/ontologies/2025/11/tobonto#tanaman"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/asus/ontologies/2025/11/tobonto#t"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/asus/ontologies/2025/11/tobonto#terdiagnosis"/>
+                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/asus/ontologies/2025/11/tobonto#t"/>
+                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/asus/ontologies/2025/11/tobonto#Daun_berlubang"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/asus/ontologies/2025/11/tobonto#setRisk"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/asus/ontologies/2025/11/tobonto#Ulat_tanah"/>
+                        <swrl:argument2 rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.3</swrl:argument2>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment></rdfs:comment>
+        <rdfs:label>R002</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/asus/ontologies/2025/11/tobonto#tanaman"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/asus/ontologies/2025/11/tobonto#t"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/asus/ontologies/2025/11/tobonto#terdiagnosis"/>
+                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/asus/ontologies/2025/11/tobonto#t"/>
+                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/asus/ontologies/2025/11/tobonto#Daun_layu"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/asus/ontologies/2025/11/tobonto#setRisk"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/asus/ontologies/2025/11/tobonto#Phytium_sp"/>
+                        <swrl:argument2 rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.2</swrl:argument2>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment></rdfs:comment>
+        <rdfs:label>R001</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/asus/ontologies/2025/11/tobonto#tanaman"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/asus/ontologies/2025/11/tobonto#t"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/asus/ontologies/2025/11/tobonto#terdiagnosis"/>
+                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/asus/ontologies/2025/11/tobonto#t"/>
+                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/asus/ontologies/2025/11/tobonto#Akar_busuk"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/asus/ontologies/2025/11/tobonto#setRisk"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/asus/ontologies/2025/11/tobonto#Phytium_sp"/>
+                        <swrl:argument2 rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.3</swrl:argument2>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment></rdfs:comment>
+        <rdfs:label>R026</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/asus/ontologies/2025/11/tobonto#tanaman"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/asus/ontologies/2025/11/tobonto#t"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/asus/ontologies/2025/11/tobonto#terdiagnosis"/>
+                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/asus/ontologies/2025/11/tobonto#t"/>
+                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/asus/ontologies/2025/11/tobonto#Daun_layu"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/asus/ontologies/2025/11/tobonto#setRisk"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/asus/ontologies/2025/11/tobonto#Ulat_tanah"/>
+                        <swrl:argument2 rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.2</swrl:argument2>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment></rdfs:comment>
+        <rdfs:label>R007</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/asus/ontologies/2025/11/tobonto#tanaman"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/asus/ontologies/2025/11/tobonto#t"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/asus/ontologies/2025/11/tobonto#terdiagnosis"/>
+                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/asus/ontologies/2025/11/tobonto#t"/>
+                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/asus/ontologies/2025/11/tobonto#Daun_layu_pada_daerah_terinfeksi"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/asus/ontologies/2025/11/tobonto#setRisk"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/asus/ontologies/2025/11/tobonto#Phytophthora_daun"/>
+                        <swrl:argument2 rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.4</swrl:argument2>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment></rdfs:comment>
+        <rdfs:label>R011</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/asus/ontologies/2025/11/tobonto#tanaman"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/asus/ontologies/2025/11/tobonto#t"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/asus/ontologies/2025/11/tobonto#terdiagnosis"/>
+                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/asus/ontologies/2025/11/tobonto#t"/>
+                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/asus/ontologies/2025/11/tobonto#Daun_layu_total"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/asus/ontologies/2025/11/tobonto#setRisk"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/asus/ontologies/2025/11/tobonto#Lanas"/>
+                        <swrl:argument2 rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.4</swrl:argument2>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi -->
+
