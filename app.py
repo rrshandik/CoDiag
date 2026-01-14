@@ -24,6 +24,71 @@ load_css('style/style.css')
 if 'form_key' not in st.session_state:
     st.session_state.form_key = 0
 
+# DEFINISI GRUP GEJALA
+SYMPTOM_GROUPS = {
+    "Gejala Akar": {
+        "icon": "🌿",
+        "symptoms": [
+            {"display": "Akar Busuk", "value": "Akar_busuk"},
+            {"display": "Perlukaan Akar", "value": "Perlukaan_akar"}
+        ]
+    },
+    "Gejala Batang": {
+        "icon": "🎋",
+        "symptoms": [
+            {"display": "Batang Berlubang", "value": "Batang_berlubang"},
+            {"display": "Batang Hitam dan Mengkerut", "value": "Batang_hitam_dan_mengkerut"},
+            {"display": "Batang Layu", "value": "Batang_layu"},
+            {"display": "Batang Terpotong", "value": "Batang_terpotong"}
+        ]
+    },
+    "Gejala Daun - Kondisi Umum": {
+        "icon": "🍃",
+        "symptoms": [
+            {"display": "Daun Layu", "value": "Daun_layu"},
+            {"display": "Daun Layu Pada Daerah Terinfeksi", "value": "Daun_layu_pada_daerah_terinfeksi"},
+            {"display": "Daun Layu Total", "value": "Daun_layu_total"},
+            {"display": "Daun Membusuk", "value": "Daun_membusuk"},
+            {"display": "Daun Menyempit", "value": "Daun_menyempit"},
+            {"display": "Daun Transparan", "value": "Daun_transparan"}
+        ]
+    },
+    "Gejala Daun - Mengkerut": {
+        "icon": "🥬",
+        "symptoms": [
+            {"display": "Daun Mengkerut (Umum)", "value": "Daun_mengkerut"},
+            {"display": "Daun Mengkerut Berwarna Kuning Keemasan", "value": "Daun_mengkerut_berwarna_kuning_keemasan"},
+            {"display": "Daun Mengkerut dengan Warna Tidak Rata", "value": "Daun_mengkerut_dengan_warna_tidak_rata"},
+            {"display": "Daun Mengkerut Seperti Kerupuk", "value": "Daun_mengkerut_seperti_kerupuk"}
+        ]
+    },
+    "Gejala Daun - Bercak & Warna": {
+        "icon": "🎨",
+        "symptoms": [
+            {"display": "Bawah Daun Bercak Hitam", "value": "Bawah_daun_bercak_hitam"},
+            {"display": "Daun Bercak Hijau Gelap Tidak Merata", "value": "Daun_bercak_hijau_gelap_tidak_merata"},
+            {"display": "Daun Berkerut Mozaik", "value": "Daun_berkerut_mozaik"},
+            {"display": "Warna Daun Memudar", "value": "Warna_daun_memudar"},
+            {"display": "Terdapat Bercak Putih Kecoklatan di Sekitar Tulang Daun", "value": "Terdapat_bercak_putih_kecoklatan_di_sekitar_tulang_daun"}
+        ]
+    },
+    "Gejala Daun - Kerusakan Fisik": {
+        "icon": "🦗",
+        "symptoms": [
+            {"display": "Daun Berlubang", "value": "Daun_berlubang"},
+            {"display": "Terdapat Banyak Lubang Kecil", "value": "Terdapat_banyak_lubang_kecil"},
+            {"display": "Terdapat Bekas Gigitan pada Jaringan Daun", "value": "Terdapat_bekas_gigitan_pada_jaringan_daun"}
+        ]
+    },
+    "Gejala Tanaman Secara Keseluruhan": {
+        "icon": "🌱",
+        "symptoms": [
+            {"display": "Tanaman Kerdil", "value": "Tanaman_kerdil"},
+            {"display": "Terdapat Pola Jaring Laba-laba Berwarna Kuning Kehitaman", "value": "Terdapat_pola_jaring_laba-laba_berwarna_kuning_kehitaman"}
+        ]
+    }
+}
+
 # Load data dari file JSON
 @st.cache_data
 def load_json_data():
@@ -52,25 +117,6 @@ hama_penyakit_list = [
     "Begomovirus", "Cucumber_virus", "Virus_kerupuk", 
     "Thrips_parvispinus", "Ulat_grayak" 
 ]
-
-# Ekstrak daftar gejala LANGSUNG dari rule_list.json (SUMBER KEBENARAN)
-@st.cache_data
-def get_gejala_from_rules():
-    """Ekstrak dan urutkan gejala dari rule_list"""
-    if not rules_loaded:
-        return []
-    
-    # Kumpulkan semua gejala unik dari rule_list
-    gejala_set = set()
-    for item in rule_list:
-        gejala_set.add(item['gejala'])
-    
-    # Urutkan alfabetis
-    gejala_list = sorted(list(gejala_set))
-    
-    return gejala_list
-
-gejala_list = get_gejala_from_rules()
 
 # Fungsi untuk membangun model Bayesian Network
 @st.cache_resource
@@ -101,21 +147,6 @@ def build_bayesian_model():
             'Thrips_parvispinus': 0.5,
             'Ulat_grayak': 0.5
         }
-        
-        # penyakit_priors = {
-        #     'Lanas': 0.15,
-        #     'Phytium_sp': 0.05,
-        #     'Ulat_tanah': 0.06,
-        #     'Jangkrik': 0.05,
-        #     'Kutu_kebul': 0.08,
-        #     'Tobacco_mozaic_virus': 0.07,
-        #     'Phytophthora_daun': 0.08,
-        #     'Begomovirus': 0.06,
-        #     'Cucumber_virus': 0.05,
-        #     'Virus_kerupuk': 0.05,
-        #     'Thrips_parvispinus': 0.12,
-        #     'Ulat_grayak': 0.18
-        # }
 
         # Masukkan CPT untuk node penyakit/hama (prior)
         penyakit = set([item['nama'] for item in rule_list])
@@ -140,7 +171,7 @@ def build_bayesian_model():
             if len(parents) == 1:
                 p = parents[0]
                 prob_given_disease = gejala_to_scores[g][p]
-                prob_given_no_disease = 0.1  # 10% leak probability (sesuai pakar)
+                prob_given_no_disease = 0.1
                 
                 cpd_g = TabularCPD(variable=g, variable_card=2, 
                                   values=[[1 - prob_given_no_disease, 1 - prob_given_disease],
@@ -162,7 +193,7 @@ def build_bayesian_model():
                             prob_not_symptom *= (1 - gejala_to_scores[g][p])
                     
                     if sum(parent_states) == 0:
-                        prob_not_symptom = 0.9  # 10% leak probability (sesuai pakar)
+                        prob_not_symptom = 0.9
                     
                     prob_symptom = 1 - prob_not_symptom
                     values_0.append(1 - prob_symptom)
@@ -260,11 +291,12 @@ def main():
         <div class="info-container">
             <h4>📋 Cara Menggunakan:</h4>
             <ol>
-                <li><strong>Pilih gejala-gejala</strong> yang terlihat pada tanaman Anda di bawah ini</li>
+                <li><strong>Pilih kategori gejala</strong> yang relevan dengan kondisi tanaman Anda</li>
+                <li><strong>Centang gejala-gejala spesifik</strong> yang terlihat pada tanaman</li>
                 <li><strong>Klik tombol</strong> "🔍 Mulai Diagnosis"</li>
                 <li><strong>Lihat hasil diagnosis</strong> dan tingkat kemungkinannya</li>
             </ol>
-            <p><strong>💡 Tips:</strong> Semakin banyak gejala yang dipilih, semakin akurat hasil diagnosisnya</p>
+            <p><strong>💡 Tips:</strong> Gejala telah dikelompokkan berdasarkan bagian tanaman untuk memudahkan pemilihan</p>
         </div>
         """, unsafe_allow_html=True)
 
@@ -272,52 +304,49 @@ def main():
     with st.form(key=f"diagnosis_form_{st.session_state.form_key}"):
         st.subheader("🔍 Pilih Gejala yang Terlihat")
         
-        if gejala_list:
-            st.info(f"📝 Total {len(gejala_list)} gejala tersedia dalam sistem")
-            
-            # Layout 3 kolom untuk checkbox
-            cols = st.columns(3)
-            evidence_dict = {}
-            
-            for idx, gejala in enumerate(gejala_list):
-                col_idx = idx % 3
-                with cols[col_idx]:
-                    display_name = format_name(gejala)
-                    evidence_dict[gejala] = st.checkbox(
-                        display_name, 
-                        key=f"symptom_{gejala}_{st.session_state.form_key}"
-                    )
-            
-            # Tombol submit dan reset dalam form
-            st.markdown("---")
-            col1, col2, col3 = st.columns([1, 2, 1])
-            
-            with col1:
-                reset_button = st.form_submit_button(
-                    label="🔄 Reset",
-                    type="secondary",
-                    use_container_width=True
-                )
-            
-            with col2:
-                submit_button = st.form_submit_button(
-                    label="🔍 Mulai Diagnosis",
-                    type="primary",
-                    use_container_width=True
-                )
-            
-            with col3:
-                # Kolom kosong untuk simetri
-                pass
+        evidence_dict = {}
+        
+        # Tampilkan gejala berdasarkan grup
+        for group_name, group_data in SYMPTOM_GROUPS.items():
+            with st.expander(f"{group_data['icon']} **{group_name}** ({len(group_data['symptoms'])} gejala)", expanded=True):
+                # Layout 2 kolom untuk setiap grup
+                cols = st.columns(2)
                 
-        else:
-            st.error("❌ Tidak dapat memuat daftar gejala!")
-            submit_button = False
-            reset_button = False
+                for idx, symptom in enumerate(group_data['symptoms']):
+                    col_idx = idx % 2
+                    with cols[col_idx]:
+                        evidence_dict[symptom['value']] = st.checkbox(
+                            symptom['display'],
+                            key=f"symptom_{symptom['value']}_{st.session_state.form_key}"
+                        )
+        
+        # Info jumlah gejala total
+        total_symptoms = sum(len(group['symptoms']) for group in SYMPTOM_GROUPS.values())
+        st.info(f"📝 Total {total_symptoms} gejala tersedia dalam {len(SYMPTOM_GROUPS)} kategori")
+        
+        # Tombol submit dan reset dalam form
+        st.markdown("---")
+        col1, col2, col3 = st.columns([1, 2, 1])
+        
+        with col1:
+            reset_button = st.form_submit_button(
+                label="🔄 Reset",
+                type="secondary",
+                use_container_width=True
+            )
+        
+        with col2:
+            submit_button = st.form_submit_button(
+                label="🔍 Mulai Diagnosis",
+                type="primary",
+                use_container_width=True
+            )
+        
+        with col3:
+            pass
 
     # Handle reset button
     if reset_button:
-        # Increment form_key untuk memaksa form baru dengan state bersih
         st.session_state.form_key += 1
         st.success("✅ Form telah direset!")
         st.rerun()
@@ -329,7 +358,7 @@ def main():
         if not selected_symptoms:
             st.warning("⚠️ Silakan pilih minimal satu gejala untuk melakukan diagnosis!")
         else:
-            # Validasi evidence - pastikan gejala ada di model
+            # Validasi evidence
             all_nodes = set(model.nodes())
             valid_symptoms = [s for s in selected_symptoms if s in all_nodes]
             invalid_symptoms = [s for s in selected_symptoms if s not in all_nodes]
