@@ -16,7 +16,7 @@ This system integrates Knowledge Graphs (built with Protégé) and Bayesian Netw
 
 ## 🛠️ Tech Stack
 
-- **Python 3.x** - Core language
+- **Python 3.10** - Core language
 - **Streamlit** - Web interface
 - **Protégé** - Knowledge Graph ontology
 - **pgmpy/pomegranate** - Bayesian Network
